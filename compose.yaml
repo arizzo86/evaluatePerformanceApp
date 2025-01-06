@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: evaluate_performance_app
+      POSTGRES_PASSWORD: demo
+      POSTGRES_DB: evalute_performance  
